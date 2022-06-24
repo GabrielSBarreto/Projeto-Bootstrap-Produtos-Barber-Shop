@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.img-carousel {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 500px;
+}
+
+.icon-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.card-largura {
+    max-width: 18rem;
+}
+
+.img-produto {
+    object-fit: cover;    
+    height: 300px;
+}
+
+/*
+
+Material Icons
+https://fonts.google.com/icons?selected=Material+Icons&icon=
+
+Documentação Boootstrap
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
+
+*/
