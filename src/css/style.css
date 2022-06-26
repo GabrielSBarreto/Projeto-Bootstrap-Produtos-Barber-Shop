@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.img-carousel {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 500px;
+}
+
+.icon-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.card-largura {
+    max-width: 18rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-produto {
+    object-fit: cover;    
+    height: 300px;
+}
+
+.form-label {
+    margin-bottom: unset;
+    margin-top: .5rem;
+}
+
+.invalid-feedback {
+    margin-bottom: .2rem;
+}
+
+.btn-enviar {
+    margin-top: 15px;
+    background-color: rgb(171, 171, 171);
+    color:#fff;
+}
+
+.btn-enviar:hover {
+    border: 1px solid rgb(171, 171, 171);
+    background-color: #fff;
+    color:rgb(171, 171, 171);
+}
+
+footer .midias a {   
+    transition: 0.3s;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer .midias a:hover {
+    transform: translateY(-15px);
+}
+
+@media (max-width: 576px) {
+    footer .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    footer .midias {
+        margin: 15px 0px;
+    }
+}
+
+/*
+
+Material Icons
+https://fonts.google.com/icons?selected=Material+Icons&icon=
+
+Documentação Boootstrap
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
+
+*/
