@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-    <title>Landing Page - Barber Shop</title>
+    <title>Bootstrap - Barber Shop</title>
 </head>
 <body>
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="#"><img src="src/img/logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,8 +28,8 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <ul class="navbar-nav">
         <li class="icon-menu"><span class="material-icons">home</span><a class="nav-link" href="#">Início</a></li>
-        <li class="icon-menu"><span class="material-icons">category</span><a class="nav-link" href="#">Produtos</a></li>
-        <li class="icon-menu"><span class="material-icons">store</span><a class="nav-link" href="#">Quem Somos</a></li>
+        <li class="icon-menu"><span class="material-icons">store</span><a class="nav-link" href="#quem-somos">Quem Somos</a></li>
+        <li class="icon-menu"><span class="material-icons">category</span><a class="nav-link" href="#produtos">Produtos</a></li>        
         <li class="icon-menu"><span class="material-icons">contact_page</span><a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contato" href="#">Contato</a></li>
       </ul>
     </div>
@@ -77,6 +77,21 @@
               </button>
             </section>
 
+            <section id="quem-somos" class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="src/img/logo.png" alt="" width="80">
+            <h1 class="display-5 fw-bold">Barber Shop</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, doloribus. Magni id, ad assumenda in quasi maxime architecto possimus molestiae, at consequuntur culpa minus adipisci commodi laudantium soluta similique delectus.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                
+                <div class="wrapper">
+                  <button type="button" class="btn btn-primary" data-toggle="popover">Contoso</button>
+                  </div>
+
+              </div>
+            </div>
+          </section>
+
             <section id="produtos" class="pt-5 pb-5">
               <div class="container">
                   <h2 class="display-2 text-center">Produtos Exclusivos</h2>
@@ -88,60 +103,160 @@
               <div class="container p-3">
                 <div class="row justify-content-center">
                   <!-- col-12 / col-md-2-->
-                    <article class="card card-largura p-0 m-2 col-md-4">
+                    <article class="card card-largura p-0 m-2">
                       <img src="src/img/shampoo.webp" class="card-img-top img-produto" alt="Shampoo Qod Premium Special Beer 220ml">
                       <div class="card-body">
                         <h5 class="card-title">Shampoo Qod Premium Special Beer 220ml</h5>
                         <p class="card-text">Shampoo Qod Premium Special Beer especialmente desenvolvido para homens que gostam de cuidar de sua aparência. Um produto multifuncional para cabelo, barba e pele.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#Modal1" class="btn btn-primary">Mais Detalhes</a>
+                
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Shampoo Qod Premium Special Beer</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/FVfZJ-9AeiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            </div>
                       </div>
                     </article>
 
-                    <article class="card card-largura p-0 m-2 col-md-4">
+                    <article class="card card-largura p-0 m-2">
                       <img src="src/img/pomada.webp" class="card-img-top img-produto" alt="Pomada Qod Barber Shop Killer 70g">
                       <div class="card-body">
                         <h5 class="card-title">Pomada Qod Barber Shop Killer 70g</h5>
                         <p class="card-text">Para dar um toque especial no cabelo e garantir a fixação dos fios, a Pomada Capilar QOd Barber Shop Super  Fixação é uma aposta!</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#Modal2" class="btn btn-primary">Mais Detalhes</a>
+
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pomada Qod Barber Shop Killer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FVfZJ-9AeiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  </div>
                       </div>
                     </article>
 
-                    <article class="card card-largura p-0 m-2 col-md-4">
+                    <article class="card card-largura p-0 m-2">
                       <img src="src/img/pomada-2.webp" class="card-img-top img-produto" alt="Pomada Qod Royal Pomade 150g">
                       <div class="card-body">
                         <h5 class="card-title">Pomada Qod Royal Pomade 150g</h5>
                         <p class="card-text">Pomada Capilar Qod Royal Pomade especialmente desenvolvido para homens que gostam de cuidar de sua aparência.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#Modal3" class="btn btn-primary">Mais Detalhes</a>
+
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pomada Qod Royal Pomade</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FVfZJ-9AeiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  </div>
                       </div>
                     </article>
 
-                    <article class="card card-largura p-0 m-2 col-md-4">
+                    <article class="card card-largura p-0 m-2">
                       <img src="src/img/balsamo.webp" class="card-img-top img-produto" alt="Bálsamo De Barba Qod Fortalecedor 80g">
                       <div class="card-body">
                         <h5 class="card-title">Bálsamo De Barba Qod Fortalecedor 80g</h5>
                         <p class="card-text">Bálsamo De Barba Qod Fortalecedor especialmente desenvolvido para homens que gostam de cuidar de sua aparência. Em sua fórmula o produto contém Mentol e Pantenol, que promovem sensação de refrescância.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#Modal4" class="btn btn-primary">Mais Detalhes</a>
+
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bálsamo De Barba Qod Fortalecedor</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FVfZJ-9AeiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  </div>
                       </div>
                     </article>
 
-                    <article class="card card-largura p-0 m-2 col-md-4">
+                    <article class="card card-largura p-0 m-2">
                       <img src="src/img/locao.webp" class="card-img-top img-produto" alt="Loção Pós Barba Qod After Shave Lotion 80g">
                       <div class="card-body">
                         <h5 class="card-title">Loção Pós Barba Qod After Shave Lotion 80g</h5>
                         <p class="card-text">Loção Pós Barba Qod After Shave Lotion especialmente desenvolvido para homens que gostam de cuidar de sua aparência. Em sua fórmula o produto conta com Mentol e Alantoína, que proporcionam refrescância e ajudam a regenerar a pele agredida pela lâmina durante o barbear.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#Modal5" class="btn btn-primary">Mais Detalhes</a>
+
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Loção Pós Barba Qod After Shave Lotion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FVfZJ-9AeiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  </div>
                       </div>
                     </article>
 
-                    <article class="card card-largura p-0 m-2 col-md-4">
+                    <article class="card card-largura p-0 m-2">
                       <img src="src/img/pomada-3.webp" class="card-img-top img-produto" alt="Pomada Qod Barber Shop Walk Líquida 120ml">
                       <div class="card-body">
                         <h5 class="card-title">Pomada Qod Barber Shop Walk Líquida 120ml</h5>
                         <p class="card-text">Inspirada em uma das músicas mais tocadas em 1972, a clássica QBS Walk agora vem também em forma de cera líquida capilar para facilitar e dar mais praticidade ao seu dia a dia. Com efeito matte e médio poder de fixação, é ideal para fixar cortes e penteados.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#Modal6" class="btn btn-primary">Mais Detalhes</a>
+
+                
+                  <!-- Modal -->
+                  <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pomada Qod Barber Shop Walk Líquida</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/FVfZJ-9AeiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  </div>
                       </div>
                     </article>
-
                 </div>
               </div>
             </section>
@@ -189,33 +304,20 @@
 
   </main>
 
-  <footer class="bg-secondary p-3">
-    <div class="container">
-      <div class="row row-cols-auto align-items-center justify-content-between">
-          <div class="div-img">
-            <img class="logo" src="src/img/logo.png" alt="">
+  <footer class="d-flex justify-content-center align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img class="logo" src="src/img/logo.png" alt="">
+            </a>
+            <span class="text-muted">&copy; 2022 Barber Shop</span>
           </div>
-
-            <div class="midias">
-               <a href="http://www.facebook.com/barbearia" target="_blank" rel="noopener noreferrer">
-                   <img src="src/img/facebook.png" alt="">
-               </a>
-
-               <a href="http://www.instagram.com/barbearia" target="_blank" rel="noopener noreferrer">
-                <img src="src/img/instagram.png" alt="">
-                </a>
-
-                <a href="http://www.youtube.com/barbearia" target="_blank" rel="noopener noreferrer">
-                    <img src="src/img/youtube.png" alt="">
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=5555999999999&text=Ol%C3%A1%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio!%20" target="_blank" rel="noopener noreferrer">
-                    <img src="src/img/whatsapp.png" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-  </footer>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="http://www.facebook.com/barbearia" target="_blank" rel="noopener noreferrer"><img src="src/img/logo-do-facebook.png" alt=""></a></li>
+            <li class="ms-3"><a class="text-muted" href="http://www.instagram.com/barbearia" target="_blank" rel="noopener noreferrer"><img src="src/img/logotipo-do-instagram.png" alt=""></li>
+            <li class="ms-3"><a class="text-muted" href="https://wa.me/5555999999999?text=Ol%C3%A1%2C+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+os+produtos." target="_blank" rel="noopener noreferrer"><img src="src/img/logotipo-do-whatsapp.png" alt=""></a></li>
+          </ul>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
