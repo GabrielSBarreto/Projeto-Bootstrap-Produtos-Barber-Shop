@@ -1,4 +1,4 @@
-# Projeto-Bootstrap
+# Projeto-Bootstrap-Produtos
  
 Projeto desenvolvido com a turma do Técnico em Informática do Senac - Santa Rosa.
  
