@@ -9,6 +9,6 @@ Utilizamos o Bootstrap para desenvolver uma página de demonstração dos produt
  *Bootstrap\
  *Responsivo
  
- [Link do Projeto](https://robsondpreuss.github.io/Projeto-Bootstrap-Produtos/)
+ [Link do Projeto](https://robsondpreuss.github.io/Projeto-Bootstrap-Produtos-Barber-Shop/)
  
  
